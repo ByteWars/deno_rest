@@ -45,7 +45,7 @@ class Seed {
       }
     } catch (e) {
       if (e === "Invalid key length") {
-        log.error(`Please shorten the 'KEY' in your .env`);
+        log.error(`Please shorten the 'KEY' in your .env`, e);
       } else {
         log.error(`${name}.json file not found in data dir`);
       }

@@ -29,6 +29,7 @@ class Database {
   async connect() {
     log.info("Database connecting...");
     const client: MongoClient = new MongoClient();
+    console.log(this.url)
     await client.connect(this.url);
     this.client = client;
     log.info("Database connected!");

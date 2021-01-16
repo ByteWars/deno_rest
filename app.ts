@@ -9,7 +9,7 @@ const { url, port, clientUrl } = configs;
 const app: Application = new Application();
 
 const corsOptions = {
-  "origin": clientUrl,
+  "origin": "*",
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
   "preflightContinue": false,
   "optionsSuccessStatus": 200,
