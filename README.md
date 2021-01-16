@@ -113,6 +113,12 @@ Review `.env/.env.example` file and create required `.env` file suitable to your
 For example: for development environment create a file `.env.development` under `.env` directory
 for test environment create a file `.env.test` under `.env` directory and add necessary variables.
 
+### Setup mongodb
+
+```shell
+docker-compose up -d
+```
+
 ###  Install denon
 If its your first run, please install `denon` from [https://deno.land/x/denon](https://deno.land/x/denon)
 
